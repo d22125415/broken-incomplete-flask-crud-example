@@ -25,6 +25,10 @@ def add():
 
   return '{"Result":"Success"}' # Really? maybe we should check!
   
+@app.route("/hello")
+def hello():
+   return '<h1>Hello and Welcome to Cloud Lab 5<h1>'
+  
 @app.route("/") #Default - Show Data
 def read(): # Name of the method
   cur = mysql.connection.cursor() #create a connection to the SQL instance
