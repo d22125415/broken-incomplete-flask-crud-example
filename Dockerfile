@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-COPY ./requirements.txt /app/requirements.txthttps://github.com/d22125415/broken-incomplete-flask-crud-example/blob/main/Docker
+COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN apt update && apt -y install libmysqlclient-dev
 RUN apt -y install python3-pip
